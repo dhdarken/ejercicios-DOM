@@ -1,3 +1,5 @@
+/*reset all */
+
 :root {
   --main-font: sans-serif;
   --font-size: 16px;
@@ -65,14 +67,29 @@ img {
   left: 0;
   background-color: var(--second-modal-color);
   width: 100%;
-  transition: transform 0.3s ease;
-  transform: translate(0, -100%);
+  transition: transform 0.3s opacity 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  /*transform: translate(
+    0,
+    -100%
+  ); /*arriba
+  /*transform: translate(0, 100%);abajo
+  transform: translate(100, 0);izq
+  transform: translate(-100, 0);derecha
+  opacity: 0; con opacity
+  visibility:hidden; esto si se le pone opacity;
+  transition: opacity 0.5s ease;*/
 }
 .panel.is-active {
   transform: translate(0, 0);
+  /*con opacity*/
+  opacity: 1;
+  visibility: visible;
 }
 
 .panel-btn {
+  padding: 0px !important;
   position: fixed;
   z-index: 999;
   bottom: 1vh;
@@ -80,7 +97,7 @@ img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
 }
 
 .menu {
