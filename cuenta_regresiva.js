@@ -13,7 +13,6 @@ export default function countdown(id,limitDate,finalMesaje){
         let minutes=("0"+Math.floor(limitTime%(1000*60*60)/(1000*60))).slice(-2);
         let seconds=("0"+Math.floor(limitTime%(1000*60)/(1000))).slice(-2);
         $countdown.innerHTML=`<h3>faltan : ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos </h3>`;
-        console.log(countdownDate,now,limitTime);
 
         if(limitTime<0){
             clearInterval(countdownTempo);
