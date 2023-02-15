@@ -8,6 +8,7 @@ import darkTheme from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
+import netWorkStatus from "./deteccion_red.js";
 
 const d=document;
 
@@ -30,3 +31,4 @@ d.addEventListener("keydown",(e)=>{
 });
 
 darkTheme(".dark-theme-btn","dark-mode");
+netWorkStatus();
