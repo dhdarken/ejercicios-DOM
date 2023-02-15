@@ -5,7 +5,7 @@ export default function responsiveTester(form){
     let tester;
     
 
-    d.addEventListener("submit",(e)=>{
+    d.addEventListener("submit",(e)=>{ 
         if(e.target===$form){
             e.preventDefault();
             //alert("formulario enviado")
