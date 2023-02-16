@@ -9,6 +9,7 @@ import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
 import netWorkStatus from "./deteccion_red.js";
+import webCam from "./deteccion_webcam.js";
 
 const d=document;
 
@@ -22,6 +23,7 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     responsiveMedia("gmaps","(min-width:1024px)",`<a href="https://goo.gl/maps/mRyVK4pjMYNeyHZh7" target ="blank" rel="noopener">Ver Mapa</a>`,`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.940642658568!2d-75.59856081701065!3d6.232699928166354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429b96ec4b813%3A0xf82ff6e918b802f2!2sCancha%20Sint%C3%A9tica%20Chalaca%20Gol!5e0!3m2!1ses!2sco!4v1676407451150!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
     responsiveTester("responsive-tester");
     userDeviceInfo("user-device");
+    webCam("webcam");
 })
 
 
